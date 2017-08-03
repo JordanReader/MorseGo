@@ -1,15 +1,16 @@
-package main 
+package readInput
 
+import (
+	"fmt"
+	"bufio"
+	"os"
+)
 
-
-func main() {
+func readInput() {
 
 	read := bufio.NewReader(os.Stdin)
     fmt.Print("Please input a letter:")
     inp, _ := read.ReadString('\n')
-    fmt.Println(inp)
-
-	
-	
+    fmt.Print(inp)
 
 }
