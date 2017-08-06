@@ -5,24 +5,20 @@ import (
 
 	"bufio"
 	"os"
-	"convert"
+
 )
 
 //ReadInput This function reads the users input, and prints
 
-func ReadInput() {
+func ReadInput() string {
 
 	read := bufio.NewReader(os.Stdin)
 	fmt.Print("Please input a letter:")
 	inp, _ := read.ReadString('\n')
 	inputFMT := checkString(inp)
-	fmt.Println(inputFMT)
-	convert.Convert()
-	if inputFMT == "s" {
-		fmt.Println("correctumundo")
-	} else {
-		fmt.Println("wrong")
-	}
+
+
+	return inputFMT
 
 }
 
