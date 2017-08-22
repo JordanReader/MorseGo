@@ -6,14 +6,35 @@ var englishLetters = [...]string {"a", "b", "c", "d", "e", "f", "g", "h", "i", "
 var morseLetters = [...]string {".-", "-...", "-.-.", "-..", ".", "..-.", "--.", "....", "..", ".---", "-.-", ".-..", "--", "-.", "---", ".--.", "--.-", ".-.", "...", "-", "..-", "...-", ".--", "-..-", "-.--", "--..", "-----", ".----", "..---", "...--", "....-", ".....", "-....", "--...", "---..", "----."}
 
 
-func Convert(letter string) string {
+func ConvertE(letter string) string {
+
+
+
 
 
 	for i := 0; i <= 35; i++ {
 
 		if letter == englishLetters[i] {
 			return morseLetters[i]
-		}else {
+		} else {
+
+		}
+	}
+
+	return letter
+
+}
+
+func ConvertM(letter string) string {
+
+
+
+
+	for i := 0; i <= 35; i++ {
+
+		if letter == morseLetters[i] {
+			return englishLetters[i]
+		} else {
 
 		}
 	}
